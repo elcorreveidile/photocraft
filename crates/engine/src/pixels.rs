@@ -140,7 +140,13 @@ fn adjusted(s: &Surface, r: Rect, adj: &Adjustment, selection: Option<&Surface>,
     let orig = buf.clone();
     // 32-bit documents get the float behaviour of an adjustment layer there (Levels doesn't clip);
     // integer depths keep the unrounded, clipped curves.
-    let depth = (fmt.sample == photocraft_color::SampleType::F32).then_some(fmt.sample);
+    // Threshold and Posterize also have a 16-bit rule (exact on the psd-tools 16-bit files), the
+    // one an adjustment layer uses; the command must agree with its own preview.
+    let depth = match (fmt.sample, adj) {
+        (photocraft_color::SampleType::F32, _) => Some(fmt.sample),
+        (photocraft_color::SampleType::U16, Adjustment::Threshold { .. } | Adjustment::Posterize { .. }) => Some(fmt.sample),
+        _ => None,
+    };
     adjust::apply_in(adj, &mut buf, adjust::Transfer::for_document(mode, fmt.sample), depth, mode);
     mix_through_selection(&fmt, r, &orig.px, &buf.px, selection)
 }

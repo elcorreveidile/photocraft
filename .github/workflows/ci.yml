@@ -214,6 +214,9 @@ jobs:
     env:
       # Match release.yml so PR results reflect what would actually ship.
       TRUNK_VERSION: 0.21.14
+      # WordNext fork: we serve the static build from Vercel, not Cloudflare, so the 24 MiB
+      # Cloudflare per-file cap does not apply. 32 MiB leaves room for upstream growth.
+      PHOTOCRAFT_WASM_MAX_BYTES: 33554432
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -229,8 +232,8 @@ jobs:
           curl -fsSL "https://github.com/trunk-rs/trunk/releases/download/v${TRUNK_VERSION}/trunk-x86_64-unknown-linux-gnu.tar.gz" \
             | tar -xz -C "$HOME/.cargo/bin" trunk
           trunk --version
-      # package.sh runs Trunk's release build, validates relative URLs, checks the 24 MiB
-      # wasm limit and exercises the same packaging step used by release.yml.
+      # package.sh runs Trunk's release build, validates relative URLs, checks the wasm size
+      # limit (PHOTOCRAFT_WASM_MAX_BYTES above) and exercises the same packaging step used by release.yml.
       - name: Build and verify browser release
         run: packaging/web/package.sh
       - name: Report wasm size
@@ -245,7 +248,7 @@ jobs:
               [ -f "$wasm" ] || continue
               bytes=$(wc -c < "$wasm" | tr -d ' ')
               mib=$(awk -v n="$bytes" 'BEGIN { printf "%.2f", n / 1048576 }')
-              echo "| $(basename "$wasm") | $bytes | $mib | 24 MiB |"
+              echo "| $(basename "$wasm") | $bytes | $mib | $((PHOTOCRAFT_WASM_MAX_BYTES / 1048576)) MiB |"
             done
           } >> "$GITHUB_STEP_SUMMARY"
 
