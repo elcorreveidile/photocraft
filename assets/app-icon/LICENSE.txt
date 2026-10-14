@@ -1,13 +1,12 @@
-PhotoCraft app icon (photocraft.svg, photocraft-small.svg and every file derived from them in
+WordNext Photo app icon (photocraft.svg, photocraft-small.svg and every file derived from them in
 this directory: photocraft-1024.png, photocraft.icns, photocraft.ico, hicolor/).
 
-Original artwork made for this project by the project owner: an engraving-style drawing created
-in ArtCraft, then vectorised. No third-party material. Licensed like the rest of PhotoCraft,
-under either of
+The WordNext monogram: original artwork by WordNext (the mark of wordnext.tech), replacing the
+upstream PhotoCraft icon in this fork. No third-party material. The icon is a WordNext trademark:
+forks and modified versions of WordNext Photo must replace it.
 
-  * Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
-  * MIT license (https://opensource.org/licenses/MIT)
+The files were rendered from the monogram's SVG (photocraft.svg) at 16 to 1024 px; the .ico and
+.icns containers were assembled from those PNGs.
 
-at your option.
-
-Regenerate the derived files with packaging/icons.sh.
+The upstream PhotoCraft icon (the nine-tailed kitsune) is not part of this fork; see the upstream
+repository for its terms.
