@@ -31,11 +31,40 @@ pub fn open(app: &mut PhotocraftApp, ctx: &egui::Context, url: &str) -> Value {
     json!({"url": url})
 }
 
+/// Is the UI drawn in Spanish? The few strings below are fork-specific and are not in the
+/// shared catalogs (which every language must keep complete), so they are chosen here.
+fn is_spanish() -> bool {
+    crate::i18n::current().code() == "es"
+}
+
+/// "WordNext Photo website" in the UI language.
+pub fn website_label() -> String {
+    if is_spanish() { format!("Sitio web de {PRODUCT_NAME}") } else { format!("{PRODUCT_NAME} website") }
+}
+
+/// The About dialog's one-line description.
+pub fn about_blurb() -> String {
+    if is_spanish() {
+        format!("{PRODUCT_NAME} — un editor de imágenes nativo y de código abierto, escrito en Rust.")
+    } else {
+        format!("{PRODUCT_NAME} — an open-source, native image editor written in Rust.")
+    }
+}
+
+/// The About dialog's upstream attribution (kept: the licence requires the copyright notice).
+pub fn about_credit() -> &'static str {
+    if is_spanish() {
+        "Basado en PhotoCraft, copyright del equipo de ArtCraft y de los colaboradores de PhotoCraft (MIT OR Apache-2.0)."
+    } else {
+        "Based on PhotoCraft, copyright the ArtCraft Team and the PhotoCraft contributors (MIT OR Apache-2.0)."
+    }
+}
+
 /// "WordNext Photo website · GitHub" as links, centred. Clicks route through [`open`] (the
 /// platform browser service) rather than `ui.hyperlink_to`, which uses the unreliable `ctx.open_url`.
 pub fn link_row(app: &mut PhotocraftApp, ui: &mut egui::Ui) {
     let t = crate::theme::Tokens::get(ui.ctx());
-    let website = format!("{PRODUCT_NAME} website");
+    let website = website_label();
     let links = [(website.as_str(), APP_PAGE), (tl!("GitHub"), GITHUB)];
     let font = egui::FontId::proportional(12.5);
     let sep = "  ·  ";

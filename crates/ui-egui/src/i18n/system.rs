@@ -22,8 +22,15 @@ pub fn system_lang() -> Lang {
     }
 }
 
+/// The language used when the system's locale is unknown or unsupported. WordNext Photo is
+/// Spanish-first, so release builds fall back to Spanish (the browser build cannot read the
+/// system locale at all). Tests keep English, as upstream's tests assume.
+fn fallback_lang() -> Lang {
+    if cfg!(test) { Lang::EN } else { Lang::from_code("es").unwrap_or(Lang::EN) }
+}
+
 fn resolve(tags: &[String]) -> Lang {
-    tags.iter().find_map(|tag| lang_from_tag(tag)).unwrap_or(Lang::EN)
+    tags.iter().find_map(|tag| lang_from_tag(tag)).unwrap_or_else(fallback_lang)
 }
 
 #[cfg(not(target_arch = "wasm32"))]

@@ -83,7 +83,7 @@
 	Save As…	Guardar como…
 	Save a Copy…	Guardar una copia…
 	{name} can't keep everything in this document	{name} no puede conservar todo lo que tiene este documento
-	Choose a format that keeps it, such as Photoshop (PSD), or save a copy.	Elija un formato que lo conserve todo, como Photoshop (PSD), o guarde una copia.
+	Choose a format that keeps it, such as Photoshop (PSD), or save a copy.	Elige un formato que lo conserve todo, como Photoshop (PSD), o guarda una copia.
 	Revert	Volver
 	Export	Exportar
 	Quick Export as PNG	Exportación rápida como PNG
@@ -557,7 +557,7 @@
 	Field Blur…	Desenfoque de campo…
 # Field Blur pins (#3373)
 	No pin selected	Ningún pin seleccionado
-	Click the image to add a pin; drag a pin to move it, or its ring to change its blur. Delete removes the selected pin.	Haga clic en la imagen para añadir un pin; arrastre un pin para moverlo o su anillo para cambiar el desenfoque. Suprimir elimina el pin seleccionado.
+	Click the image to add a pin; drag a pin to move it, or its ring to change its blur. Delete removes the selected pin.	Haz clic en la imagen para añadir un pin; arrastra un pin para moverlo o su anillo para cambiar el desenfoque. Suprimir elimina el pin seleccionado.
 	Iris Blur…	Desenfoque de iris…
 	Tilt-Shift…	Cambio de inclinación…
 	Path Blur…	Desenfoque de trazado…
@@ -846,7 +846,7 @@
 	All Caps	Todo en mayúsculas
 	All Slices	Todos los sectores
 	All User Slices	Todos los sectores de usuario
-	All shortcuts reset to PhotoCraft defaults.	Se restablecieron todos los métodos abreviados a los valores predeterminados de PhotoCraft.
+	All shortcuts reset to PhotoCraft defaults.	Se restablecieron todos los métodos abreviados a los valores predeterminados de WordNext Photo.
 	Alt	Alt
 	Always use pressure for opacity	Usar siempre la presión para la opacidad
 	Always use pressure for size	Usar siempre la presión para el tamaño
@@ -855,7 +855,7 @@
 	Angle	Ángulo
 	Angle Gradient	Degradado angular
 	Angle Jitter	Variación de ángulo
-	Answer the unsaved-changes prompt first	Responda primero al aviso de cambios sin guardar
+	Answer the unsaved-changes prompt first	Responde primero al aviso de cambios sin guardar
 	Anti-alias	Suavizado
 	Appearance	Apariencia
 	Appearance (Layer Style)	Apariencia (estilo de capa)
@@ -928,7 +928,7 @@
 	Canvas	Lienzo
 	Canvas extension color:	Color de extensión del lienzo:
 	Capture	Capturar
-	Capture the visibility, position and style of every layer with + below, then switch between versions.	Capture la visibilidad, la posición y el estilo de cada capa con el + de abajo y cambie entre versiones.
+	Capture the visibility, position and style of every layer with + below, then switch between versions.	Captura la visibilidad, la posición y el estilo de cada capa con el + de abajo y cambia entre versiones.
 	Catch-up on Stroke End	Poner al día al final del trazo
 	Center	Centro
 	Center Crop Marks	Marcas de corte centradas
@@ -946,13 +946,13 @@
 	Clear Override	Quitar excepción
 	Clear Samples	Borrar muestras
 	Click sets foreground · right-click sets background	El clic establece el color frontal · el clic derecho establece el de fondo
-	Click the first point or press {key} to close · Esc cancels	Haga clic en el primer punto o pulse {key} para cerrar · Esc cancela
-	Click to add a point · drag off or {key}-click or Delete to remove	Clic para añadir un punto · arrastre fuera, {key}-clic o Delete para quitar
+	Click the first point or press {key} to close · Esc cancels	Haz clic en el primer punto o pulsa {key} para cerrar · Esc cancela
+	Click to add a point · drag off or {key}-click or Delete to remove	Clic para añadir un punto · arrastra fuera, {key}-clic o Delete para quitar
 	Click to apply, {key}-click to clear overrides, double-click for Style Options	Clic para aplicar, {key}-clic para quitar excepciones, doble clic para Opciones de estilo
-	Click to edit the gradient	Haga clic para editar el degradado
-	Click to restore the current colour	Haga clic para restaurar el color actual
-	Click to zoom in  ·  {key}-click to zoom out  ·  drag right/left to zoom in/out	Clic para acercar  ·  {key}-clic para alejar  ·  arrastre a la derecha/izquierda para acercar/alejar
-	Click with the Note tool to add a note.	Haga clic con la herramienta Nota para añadir una nota.
+	Click to edit the gradient	Haz clic para editar el degradado
+	Click to restore the current colour	Haz clic para restaurar el color actual
+	Click to zoom in  ·  {key}-click to zoom out  ·  drag right/left to zoom in/out	Clic para acercar  ·  {key}-clic para alejar  ·  arrastra a la derecha/izquierda para acercar/alejar
+	Click with the Note tool to add a note.	Haz clic con la herramienta Nota para añadir una nota.
 	Click: corner · Drag: smooth · Click first point: close · {key} finish · Esc cancel	Clic: esquina · Arrastrar: suavizar · Clic en el primer punto: cerrar · {key}: terminar · Esc: cancelar
 	Click: corner · Drag: smooth · {alt}-drag: break handle · Click or drag first point: close · {key} finish · Esc cancel	Clic: esquina · Arrastrar: suavizar · {alt}+arrastrar: romper manejador · Clic o arrastrar en el primer punto: cerrar · {key}: terminar · Esc: cancelar
 	Clip to layer below	Recortar a la capa inferior
@@ -1000,7 +1000,7 @@
 	Create Texture	Crear textura
 	Create Video Timeline	Crear línea de tiempo de vídeo
 	Create a new count group	Crear un grupo de recuento nuevo
-	Create a new document or open an existing file.	Cree un documento nuevo o abra un archivo existente.
+	Create a new document or open an existing file.	Crea un documento nuevo o abre un archivo existente.
 	Create a new group	Crear un grupo nuevo
 	Create a new layer	Crear una capa nueva
 	Create new action	Crear una acción nueva
@@ -1034,7 +1034,7 @@
 	Default printer	Impresora predeterminada
 	Default restored.	Se restauraron los valores predeterminados.
 	Define	Definir
-	Define at least one variable first.	Defina al menos una variable primero.
+	Define at least one variable first.	Define al menos una variable primero.
 	Dehaze	Eliminar neblina
 	Delete Cropped Pixels	Eliminar píxeles recortados
 	Delete Group	Eliminar grupo
@@ -1088,21 +1088,21 @@
 	Yes	Sí
 	Done	Hecho
 	Dots	Puntos
-	Drag a rectangle around the object	Arrastre un rectángulo alrededor del objeto
-	Drag on the image to add a constraint; Shift for horizontal/vertical; right-click to delete.	Arrastre sobre la imagen para añadir una restricción; Mayús para horizontal/vertical; clic derecho para eliminar.
-	Drag to move the active shape's path or the Work Path	Arrastre para mover el trazado de la forma activa o el trazado de trabajo
+	Drag a rectangle around the object	Arrastra un rectángulo alrededor del objeto
+	Drag on the image to add a constraint; Shift for horizontal/vertical; right-click to delete.	Arrastra sobre la imagen para añadir una restricción; Mayús para horizontal/vertical; clic derecho para eliminar.
+	Drag to move the active shape's path or the Work Path	Arrastra para mover el trazado de la forma activa o el trazado de trabajo
 	Click: select anchor · Drag: move anchor, handle or segment · {shift}-click: add · {alt}-click: whole subpath	Clic: seleccionar punto · Arrastrar: mover punto, manejador o segmento · {shift}-clic: añadir · {alt}-clic: subtrazado completo
-	Draw with the Pen tool (P) or make a work path from a selection.	Dibuje con la herramienta Pluma (P) o cree un trazado de trabajo a partir de una selección.
-	Drop an image or PSD anywhere to open it.	Suelte una imagen o un PSD en cualquier lugar para abrirlo.
+	Draw with the Pen tool (P) or make a work path from a selection.	Dibuja con la herramienta Pluma (P) o crea un trazado de trabajo a partir de una selección.
+	Drop an image or PSD anywhere to open it.	Suelta una imagen o un PSD en cualquier lugar para abrirlo.
 	Native file drag-and-drop is unavailable	Arrastrar y soltar archivos de forma nativa no está disponible en Wayland
-	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Arrastrar y soltar archivos de forma nativa aún no es compatible con Wayland. Use Archivo › Abrir, o copie la imagen en su gestor de archivos y péguela con {paste}.
-	To drop files, start PhotoCraft under XWayland: `{command}`	Para soltar archivos, inicie PhotoCraft con XWayland: `{command}`
-	Or set Preferences › Performance › Linux display server to X11: PhotoCraft then always starts under XWayland.	O establezca Preferencias › Rendimiento › Servidor de pantalla de Linux en X11: PhotoCraft se iniciará siempre con XWayland.
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Arrastrar y soltar archivos de forma nativa aún no es compatible con Wayland. Usa Archivo › Abrir, o copia la imagen en tu gestor de archivos y pégala con {paste}.
+	To drop files, start PhotoCraft under XWayland: `{command}`	Para soltar archivos, inicia WordNext Photo con XWayland: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: PhotoCraft then always starts under XWayland.	O establece Preferencias › Rendimiento › Servidor de pantalla de Linux en X11: WordNext Photo se iniciará siempre con XWayland.
 	Edit › Paste	Edición › Pegar
 	Duplicate Layers…	Duplicar capas…
 	Duplicate style	Duplicar estilo
 	Edit Toolbar…	Editar barra de herramientas…
-	Use File › Open, or paste a copied image with {paste}.	Use Archivo › Abrir, o pegue una imagen copiada con {paste}.
+	Use File › Open, or paste a copied image with {paste}.	Usa Archivo › Abrir, o pega una imagen copiada con {paste}.
 	Edit in Quick Mask Mode  (Q)	Editar en modo de máscara rápida  (Q)
 	Edit in Standard Mode  (Q)	Editar en modo estándar  (Q)
 	Effects	Efectos
@@ -1193,7 +1193,7 @@
 	Import Brushes…	Importar pinceles…
 	Gradient Preset Options	Opciones de ajustes preestablecidos de degradado
 	Import .GRD	Importar .GRD
-	Choose a gradient file (.grd).	Seleccione un archivo de degradados (.grd).
+	Choose a gradient file (.grd).	Selecciona un archivo de degradados (.grd).
 	Import brushes (.abr)	Importar pinceles (.abr)
 	Import Presets	Importar ajustes preestablecidos
 	Imported	Importado
@@ -1314,9 +1314,9 @@
 	Opacity	Opacidad
 	Opacity Jitter	Variación de opacidad
 	Opacity:	Opacidad:
-	Open a document to define variables.	Abra un documento para definir variables.
-	Open a document to select a colour range.	Abra un documento para seleccionar una gama de colores.
-	Open a document to use the timeline.	Abra un documento para usar la línea de tiempo.
+	Open a document to define variables.	Abre un documento para definir variables.
+	Open a document to select a colour range.	Abre un documento para seleccionar una gama de colores.
+	Open a document to use the timeline.	Abre un documento para usar la línea de tiempo.
 	Optical	Óptico
 	Optimized	Optimizado
 	Option-click to define a source point to clone from	Clic con Opción para definir un punto de origen de clonación
@@ -1343,11 +1343,11 @@
 	Percent	Porcentaje
 	Perceptual	Perceptual
 	Perspective Warp is not active	La deformación de perspectiva no está activa
-	Perspective Warp: draw planes along the image's perspective, then switch to Warp	Deformación de perspectiva: dibuje planos siguiendo la perspectiva de la imagen y luego cambie a Deformar
+	Perspective Warp: draw planes along the image's perspective, then switch to Warp	Deformación de perspectiva: dibuja planos siguiendo la perspectiva de la imagen y luego cambia a Deformar
 	Photo Filter	Filtro de fotografía
-	PhotoCraft	PhotoCraft
-	PhotoCraft Manages Colors	PhotoCraft gestiona el color
-	PhotoCraft — an open-source, native image editor written in Rust.	PhotoCraft — un editor de imágenes nativo y de código abierto escrito en Rust.
+	PhotoCraft	WordNext Photo
+	PhotoCraft Manages Colors	WordNext Photo gestiona el color
+	PhotoCraft — an open-source, native image editor written in Rust.	WordNext Photo — un editor de imágenes nativo y de código abierto escrito en Rust.
 	Pin Depth:	Profundidad de la chincheta:
 	Pixel Length:	Longitud en píxeles:
 	Pixels/Centimeter	Píxeles/centímetro
@@ -1365,7 +1365,7 @@
 	Preset Type	Tipo de ajuste preestablecido
 	Preset:	Ajuste preestablecido:
 	Presets:	Ajustes preestablecidos:
-	Press keys…	Pulse las teclas…
+	Press keys…	Pulsa las teclas…
 	Pressure	Presión
 	Pressure for Opacity	Presión para la opacidad
 	Pressure for Size	Presión para el tamaño
@@ -1397,7 +1397,7 @@
 	Rate	Velocidad
 	Recently Used	Usados recientemente
 	Reconstruct	Reconstruir
-	Record ● a sequence of edits, then play ▶ it on any document.	Grabe ● una secuencia de ediciones y reprodúzcala ▶ en cualquier documento.
+	Record ● a sequence of edits, then play ▶ it on any document.	Graba ● una secuencia de ediciones y reprodúcela ▶ en cualquier documento.
 	Red	Rojo
 	Redefine style by current selection	Redefinir el estilo con la selección actual
 	Refine	Refinar
@@ -1422,12 +1422,12 @@
 	Reset All to Defaults	Restablecer todo a los valores predeterminados
 	Import Shortcuts…	Importar métodos abreviados…
 	Load a keyboard shortcut set saved as .kys	Cargar un conjunto de métodos abreviados de teclado guardado como .kys
-	Imported {n} shortcuts from {file}. Click OK to keep them.	Se importaron {n} métodos abreviados de {file}. Haga clic en Aceptar para conservarlos.
-	{n} commands are not in PhotoCraft.	{n} comandos no existen en PhotoCraft.
+	Imported {n} shortcuts from {file}. Click OK to keep them.	Se importaron {n} métodos abreviados de {file}. Haz clic en Aceptar para conservarlos.
+	{n} commands are not in PhotoCraft.	{n} comandos no existen en WordNext Photo.
 	Keyboard shortcuts imported	Métodos abreviados de teclado importados
-	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	Su conjunto de métodos abreviados de teclado {set} se usa aquí: {n} métodos abreviados difieren de los predeterminados. Edición › Métodos abreviados de teclado los muestra; Restablecer todo a los valores predeterminados lo deshace.
+	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	Tu conjunto de métodos abreviados de teclado {set} se usa aquí: {n} métodos abreviados difieren de los predeterminados. Edición › Métodos abreviados de teclado los muestra; Restablecer todo a los valores predeterminados lo deshace.
 	Import keyboard shortcuts?	¿Importar métodos abreviados de teclado?
-	PhotoCraft found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from PhotoCraft's. Import it?	PhotoCraft encontró en este equipo su conjunto de métodos abreviados de teclado {set} de otro editor de imágenes: {n} de sus métodos abreviados difieren de los de PhotoCraft. ¿Desea importarlo?
+	PhotoCraft found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from PhotoCraft's. Import it?	WordNext Photo ha encontrado en este equipo tu conjunto de métodos abreviados de teclado {set} de otro editor de imágenes: {n} de sus métodos abreviados difieren de los de WordNext Photo. ¿Quieres importarlo?
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	Edición › Métodos abreviados de teclado › Restablecer todo a los valores predeterminados deshace una importación.
 	Don't Import	No importar
 	The keyboard shortcut set was not imported: {error}	No se importó el conjunto de métodos abreviados de teclado: {error}
@@ -1468,8 +1468,8 @@
 	Search fonts	Buscar fuentes
 	Select All	Seleccionar todo
 	Select Subject	Seleccionar sujeto
-	Select a type layer or click into text to insert glyphs	Seleccione una capa de texto o haga clic en el texto para insertar glifos
-	Select text to apply a character style	Seleccione texto para aplicar un estilo de carácter
+	Select a type layer or click into text to insert glyphs	Selecciona una capa de texto o haz clic en el texto para insertar glifos
+	Select text to apply a character style	Selecciona texto para aplicar un estilo de carácter
 	Select:	Selección:
 	Selections	Selecciones
 	Selective	Selectivo
@@ -1634,8 +1634,8 @@
 	Centimeters	Centímetros
 	Choke	Contraer
 	Classic	Clásico
-	Click to add text	Haga clic para añadir texto
-	Click to fill similar colours	Haga clic para rellenar colores similares
+	Click to add text	Haz clic para añadir texto
+	Click to fill similar colours	Haz clic para rellenar colores similares
 	Clone Stamp Tool	Herramienta Tampón de clonar
 	Color Burn	Subexposición de color
 	Color Dodge	Sobreexposición de color
@@ -1654,7 +1654,7 @@
 	Current Tool	Herramienta actual
 	Custom Shape Tool	Herramienta Forma personalizada
 	Cyans	Cianes
-	Default PhotoCraft Size	Tamaño predeterminado de PhotoCraft
+	Default PhotoCraft Size	Tamaño predeterminado de WordNext Photo
 	Delete Workspace	Eliminar espacio de trabajo
 	Diamond	Diamante
 	Dimensions:	Dimensiones:
@@ -1665,9 +1665,9 @@
 	Document Sizes	Tamaños del documento
 	Dodge Tool	Herramienta Sobreexponer
 	Down	Abajo
-	Drag to draw a gradient	Arrastre para dibujar un degradado
-	Drag to move the active layer	Arrastre para mover la capa activa
-	Drag to pan  ·  hold Space with any tool	Arrastre para desplazar  ·  mantenga pulsado Espacio con cualquier herramienta
+	Drag to draw a gradient	Arrastra para dibujar un degradado
+	Drag to move the active layer	Arrastra para mover la capa activa
+	Drag to pan  ·  hold Space with any tool	Arrastra para desplazar  ·  mantén pulsado Espacio con cualquier herramienta
 	Drop Shadow	Sombra paralela
 	Dual Brush	Pincel dual
 	Edge	Borde
@@ -1757,15 +1757,15 @@
 	Direct Selection Tool	Herramienta Selección directa
 	Add Anchor Point Tool	Herramienta Añadir punto de ancla
 	Delete Anchor Point Tool	Herramienta Eliminar punto de ancla
-	Click a segment to add an anchor point · {alt}-click an anchor to delete it	Haga clic en un segmento para añadir un punto de ancla · {alt}-clic en un punto de ancla para eliminarlo
-	Click an anchor point to delete it · {alt}-click a segment to add one	Haga clic en un punto de ancla para eliminarlo · {alt}-clic en un segmento para añadir uno
+	Click a segment to add an anchor point · {alt}-click an anchor to delete it	Haz clic en un segmento para añadir un punto de ancla · {alt}-clic en un punto de ancla para eliminarlo
+	Click an anchor point to delete it · {alt}-click a segment to add one	Haz clic en un punto de ancla para eliminarlo · {alt}-clic en un segmento para añadir uno
 	Pattern Overlay	Superposición de motivo
 	Pen Pressure	Presión de la pluma
 	Pen Tilt	Inclinación de la pluma
 	Pen Tool	Herramienta Pluma
 	Convert Point Tool	Herramienta Convertir punto
 	Photo	Fotografía
-	PhotoCraft website	Sitio web de PhotoCraft
+	PhotoCraft website	Sitio web de WordNext Photo
 	Picas	Picas
 	Pillow Emboss	Relieve en almohadilla
 	Pixel Replacement	Sustitución de píxeles
@@ -1845,9 +1845,9 @@
 	{name} Properties	Propiedades de {name}
 
 # Templates with placeholders
-	Revert “{name}” to the last saved version? Your changes will be lost.	¿Desea volver «{name}» a la última versión guardada? Se perderán los cambios.
-	Do you want to save the changes you made to “{name}” before quitting?	¿Desea guardar los cambios realizados en «{name}» antes de salir?
-	Do you want to save the changes you made to “{name}” before closing?	¿Desea guardar los cambios realizados en «{name}» antes de cerrar?
+	Revert “{name}” to the last saved version? Your changes will be lost.	¿Quieres volver «{name}» a la última versión guardada? Se perderán los cambios.
+	Do you want to save the changes you made to “{name}” before quitting?	¿Quieres guardar los cambios realizados en «{name}» antes de salir?
+	Do you want to save the changes you made to “{name}” before closing?	¿Quieres guardar los cambios realizados en «{name}» antes de cerrar?
 	Doc: {flat}/{layered}	Doc: {flat}/{layered}
 	Scratch: {size}	Memoria virtual: {size}
 	Untagged {mode}	Sin etiquetar {mode}
@@ -2080,7 +2080,7 @@
 	Create new brush from these settings	Crear un pincel nuevo con estos ajustes
 	Update the current brush with these settings	Actualizar el pincel actual con estos ajustes
 	Delete brush	Eliminar pincel
-	Drag the arrow to set the angle, the dots to set the roundness	Arrastre la flecha para fijar el ángulo y los puntos para fijar la redondez
+	Drag the arrow to set the angle, the dots to set the roundness	Arrastra la flecha para fijar el ángulo y los puntos para fijar la redondez
 	Expand	Expandir
 	Expand Panel Group	Expandir grupo de paneles
 	Expand group  ({key}-click: all groups)	Expandir grupo  ({key}-clic: todos los grupos)
@@ -2104,7 +2104,7 @@
 	System Info	Información del sistema
 	More panels	Más paneles
 	More documents	Más documentos
-	These settings aren't available in PhotoCraft yet.	Estos ajustes aún no están disponibles en PhotoCraft.
+	These settings aren't available in PhotoCraft yet.	Estos ajustes aún no están disponibles en WordNext Photo.
 	Graphics	Gráficos
 	Reset GPU Backend	Restablecer el backend de GPU
 	Applies at next launch.	Se aplicará en el próximo inicio.
@@ -2137,7 +2137,7 @@
 	Capture Brush Size in Preset	Capturar tamaño del pincel en el ajuste preestablecido
 	Include Tool Settings	Incluir ajustes de herramienta
 	Include Color	Incluir color
-	Enter a name for the brush preset	Escriba un nombre para el ajuste preestablecido de pincel
+	Enter a name for the brush preset	Escribe un nombre para el ajuste preestablecido de pincel
 	A brush preset with this name already exists	Ya existe un ajuste preestablecido de pincel con este nombre
 	Brush Preset Options	Opciones de ajustes preestablecidos de pincel
 	Group name	Nombre del grupo
@@ -2172,7 +2172,7 @@
 	The gradient the Gradient tool paints with	El degradado con el que pinta la herramienta Degradado
 	Adds the current gradient to the Gradients panel	Añade el degradado actual al panel Degradados
 	Gradient stops	Paradas de degradado
-	Select a type layer to edit its character and paragraph settings.	Seleccione una capa de texto para editar sus ajustes de carácter y párrafo.
+	Select a type layer to edit its character and paragraph settings.	Selecciona una capa de texto para editar sus ajustes de carácter y párrafo.
 	Text color	Color del texto
 	Type Options	Opciones de texto
 	Anti-aliasing method	Método de suavizado
@@ -2196,7 +2196,7 @@
 	Use tablet pressure	Usar la presión de la tableta
 	Vulkan	Vulkan
 	Alt-click to define a source point to clone from	Alt+clic para definir un punto de origen de clonación
-	No path to make a selection from: draw one with the Pen tool or select one in the Paths panel.	No hay ningún trazado para crear una selección: dibuje uno con la herramienta Pluma o seleccione uno en el panel Trazados.
+	No path to make a selection from: draw one with the Pen tool or select one in the Paths panel.	No hay ningún trazado para crear una selección: dibuja uno con la herramienta Pluma o selecciona uno en el panel Trazados.
 	Cancel opening	Cancelar apertura
 	Cancelled opening {name}	Se canceló la apertura de {name}
 	The document “{name}” does not have an embedded {mode} profile.	El documento «{name}» no tiene un perfil {mode} incrustado.
@@ -2210,7 +2210,7 @@
 	Saved {name}	Guardado: {name}
 	Saving {name}	Guardando {name}
 	Saving {percent}	Guardando {percent}
-	A save to {name} is still running; try again when it finishes	Todavía se está guardando {name}; inténtelo de nuevo cuando termine
+	A save to {name} is still running; try again when it finishes	Todavía se está guardando {name}; inténtalo de nuevo cuando termine
 	{label} is writing the file and can no longer be cancelled	{label} está escribiendo el archivo y ya no se puede cancelar
 	Opening {name}…	Abriendo {name}…
 	Opening…	Abriendo…
@@ -2277,10 +2277,10 @@
 	Pencil Tool	Herramienta Lápiz
 	Pixel	Píxel
 	Adjustment	Ajuste
-	Drag (lasso) or click points (polygonal) · {add} add · {sub} subtract	Arrastre (lazo) o haga clic en los puntos (poligonal) · {add} añadir · {sub} restar
-	Drag a crop box · drag inside to move · edges resize ({ratio} ratio, {centre} centre) · Space moves while drawing · arrows nudge · X swaps orientation · {commit} commits · Esc cancels	Arrastre un marco de recorte · arrastre dentro para mover · los bordes cambian el tamaño ({ratio} proporción, {centre} centro) · Espacio mueve mientras dibuja · flechas desplazan · X cambia orientación · {commit} aplica · Esc cancela
+	Drag (lasso) or click points (polygonal) · {add} add · {sub} subtract	Arrastra (lazo) o haz clic en los puntos (poligonal) · {add} añadir · {sub} restar
+	Drag a crop box · drag inside to move · edges resize ({ratio} ratio, {centre} centre) · Space moves while drawing · arrows nudge · X swaps orientation · {commit} commits · Esc cancels	Arrastra un marco de recorte · arrastra dentro para mover · los bordes cambian el tamaño ({ratio} proporción, {centre} centro) · Espacio mueve mientras dibuja · flechas desplazan · X cambia orientación · {commit} aplica · Esc cancela
 	{mode} Color · {bits} bit	Color {mode} · {bits} bits
-	Scrubby Zoom	Zoom por arrastre
+	Scrubby Zoom	Zoom por arrastra
 	Auto Erase	Borrado automático
 	Color Adaptation	Adaptación de color
 	Preserve Transparency	Conservar transparencia
@@ -2313,15 +2313,15 @@
 	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	Automático utiliza la GPU cuando está disponible y cambia a la CPU si hay errores.
 	Switched to CPU rendering	Se cambió al renderizado por CPU
 	GPU acceleration could not continue. Your documents are unchanged.	La aceleración GPU no pudo continuar. Los documentos no han cambiado.
-	PhotoCraft is using the CPU image compositor. The window may still use your graphics adapter.	PhotoCraft compone las imágenes en la CPU. La ventana aún puede usar el adaptador gráfico.
-	Retry GPU requires a restart. Save your work first.	Reintentar la GPU requiere reiniciar. Guarde primero su trabajo.
+	PhotoCraft is using the CPU image compositor. The window may still use your graphics adapter.	WordNext Photo compone las imágenes en la CPU. La ventana aún puede usar el adaptador gráfico.
+	Retry GPU requires a restart. Save your work first.	Reintentar la GPU requiere reiniciar. Guarda primero tu trabajo.
 	Keep Using CPU	Seguir usando CPU
 	Retry GPU	Reintentar GPU
 	Advanced	Avanzado
 	GPU Backend	Backend de GPU
 	Details	Detalles
 	Rendering mode	Modo de renderizado
-	Freeze Lasso: drag to freeze an area, Alt-drag to thaw it (L)	Lazo de congelación: arrastre para congelar un área; Alt+arrastrar para descongelarla (L)
+	Freeze Lasso: drag to freeze an area, Alt-drag to thaw it (L)	Lazo de congelación: arrastra para congelar un área; Alt+arrastrar para descongelarla (L)
 	Shadow Clipping Warning (U)	Aviso de recorte de sombras (U)
 	Highlight Clipping Warning (O)	Aviso de recorte de luces (O)
 	Show Lab Color Readouts	Mostrar valores de color Lab
@@ -2350,10 +2350,10 @@ cameraRaw	Temperature	Temperatura
 cameraRaw	Amount	Cantidad
 	Patch Tool	Herramienta Parche
 	Patch:	Parche:
-	Lasso around an area, then drag the selection	Rodee un área con el lazo y arrastre la selección
+	Lasso around an area, then drag the selection	Rodea un área con el lazo y arrastra la selección
 	Transform On Drop	Transformar al soltar
-	Scale or rotate the moved area, then press {key}	Escale o gire el área movida y pulse {key}
-	Now drag the selection onto another area	Ahora arrastre la selección a otra área
+	Scale or rotate the moved area, then press {key}	Escala o gira el área movida y pulsa {key}
+	Now drag the selection onto another area	Ahora arrastra la selección a otra área
 	Edit Type	Editar texto
 
 
@@ -2368,8 +2368,8 @@ cameraRaw	Amount	Cantidad
 	Full-resolution preview unavailable	Vista previa a resolución completa no disponible
 	No patterns	Sin motivos
 	Enable {name}	Activar {name}
-	Hold Alt while drawing for straight segments	Mantenga Alt al dibujar para segmentos rectos
-	Drag or click polygon points · hold Alt during lasso for straight segments · {add} add · {sub} before drawing subtracts	Arrastre o haga clic en los puntos del polígono · mantenga Alt durante el lazo para segmentos rectos · {add} añadir · {sub} antes de dibujar resta
+	Hold Alt while drawing for straight segments	Mantén Alt al dibujar para segmentos rectos
+	Drag or click polygon points · hold Alt during lasso for straight segments · {add} add · {sub} before drawing subtracts	Arrastra o haz clic en los puntos del polígono · mantén Alt durante el lazo para segmentos rectos · {add} añadir · {sub} antes de dibujar resta
 	Extend	Extender
 	Structure:	Estructura:
 	Content-Aware Move Tool	Herramienta Mover con detección de contenido
@@ -2445,13 +2445,13 @@ cameraRaw	Amount	Cantidad
 	Pick screen color	Elegir color de pantalla
 	Sample a pixel anywhere on the screen	Tomar un píxel en cualquier lugar de la pantalla
 	Click to pick · Esc to cancel	Clic para elegir · Esc para cancelar
-	Pick a screen pixel or press Esc to cancel	Elija un píxel de la pantalla o pulse Esc para cancelar
-	Scroll to zoom	Desplace para ampliar
-	Drag to pan · Scroll to zoom · Double-click to fit	Arrastre para desplazar · Desplace para ampliar · Doble clic para ajustar
+	Pick a screen pixel or press Esc to cancel	Elige un píxel de la pantalla o pulsa Esc para cancelar
+	Scroll to zoom	Desplaza para ampliar
+	Drag to pan · Scroll to zoom · Double-click to fit	Arrastra para desplazar · Desplaza para ampliar · Doble clic para ajustar
 	Show/Hide All Panels	Mostrar/ocultar todos los paneles
 	Show/Hide Panels	Mostrar/ocultar paneles
 	Could not open	No se pudo abrir
-	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: la ruta no es Unicode válido; cambie el nombre del archivo y vuelva a abrirlo.
+	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: la ruta no es Unicode válido; cambia el nombre del archivo y vuelve a abrirlo.
 
 # Fill dialog, layer style contours and Image Size
 	Contents:	Contenido:
@@ -2484,7 +2484,7 @@ cameraRaw	Amount	Cantidad
 	Red Eye	Ojos rojos
 	Pupil Size	Tamaño de pupila
 	Darken Amount	Cantidad de oscurecimiento
-	Click a red pupil to neutralize it	Haga clic en una pupila roja para corregirla
+	Click a red pupil to neutralize it	Haz clic en una pupila roja para corregirla
 	open source	código abierto
 	…and {n} more	…y {n} más
 
@@ -2527,7 +2527,7 @@ fontWeight	Italic	Cursiva
 	Rotate View	Rotar vista
 	Rotate View Tool	Herramienta Rotar vista
 	Reset View	Restablecer vista
-	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Arrastre alrededor del centro para rotar la vista  ·  Mayús fija a 15°
+	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Arrastra alrededor del centro para rotar la vista  ·  Mayús fija a 15°
 
 # Painting symmetry presets.
 	Dual Axis	Doble eje
@@ -2548,12 +2548,12 @@ fontWeight	Italic	Cursiva
 	Show Sampling Ring	Mostrar anillo de muestreo
 
 # Color Picker warnings
-	Out of gamut for printing: click for the nearest printable colour	Fuera de la gama de impresión: haga clic para el color imprimible más cercano
-	Not a web colour: click for the nearest web colour	No es un color web: haga clic para el color web más cercano
+	Out of gamut for printing: click for the nearest printable colour	Fuera de la gama de impresión: haz clic para el color imprimible más cercano
+	Not a web colour: click for the nearest web colour	No es un color web: haz clic para el color web más cercano
 	Color to Alpha…	Color a alfa…
 	Transparency Threshold	Umbral de transparencia
 	Opacity Threshold	Umbral de opacidad
-	PhotoCraft — Screen Color Picker	PhotoCraft — Selector de color de pantalla
+	PhotoCraft — Screen Color Picker	WordNext Photo — Selector de color de pantalla
 
 	Rasterize svg groups deeper than	Rasterizar grupos SVG con mayor profundidad
 	0 turns this threshold off; SVG groups nested deeper than 100 levels are always rasterized.	0 desactiva este umbral; los grupos SVG anidados a más de 100 niveles siempre se rasterizan.
@@ -2567,7 +2567,7 @@ fontWeight	Italic	Cursiva
 	Cycle Overlay	Alternar superposición
 	Cycle Orientation	Alternar orientación
 	Set the overlay options for the Crop tool	Definir las opciones de superposición de la herramienta Recortar
-	Alt-click went to the desktop, which moves windows with Alt-drag. Set its window-move key to Super, or latch Alt in Window › Modifier Keys.	El Alt+clic lo recibió el escritorio, que mueve ventanas con Alt+arrastrar. Cambie su tecla para mover ventanas a Super o bloquee Alt en Ventana › Teclas modificadoras.
+	Alt-click went to the desktop, which moves windows with Alt-drag. Set its window-move key to Super, or latch Alt in Window › Modifier Keys.	El Alt+clic lo recibió el escritorio, que mueve ventanas con Alt+arrastrar. Cambia la tecla para mover ventanas a Super o bloquea Alt en Ventana › Teclas modificadoras.
 
 # Shared Layer Style color picker
 	Color Picker (Layer Style Color)	Selector de color (color del estilo de capa)
@@ -2598,13 +2598,13 @@ fontWeight	Italic	Cursiva
 	Create Triangle	Crear triángulo
 	Create Polygon	Crear polígono
 	Pressure curve	Curva de presión
-	Click to add a point, right-click to remove	Haga clic para añadir un punto; clic derecho para quitarlo
+	Click to add a point, right-click to remove	Haz clic para añadir un punto; clic derecho para quitarlo
 	Some brush presets could not be loaded	No se pudieron cargar algunos ajustes preestablecidos de pincel
 	Retry saving presets	Reintentar guardar los ajustes preestablecidos
 	Brush preset changes are not saved: {error}	Los cambios en los ajustes preestablecidos de pincel no se han guardado: {error}
-	Keep this tab open to retain your brushes.	Mantenga esta pestaña abierta para conservar sus pinceles.
-	Browser storage is unavailable; brushes are session-only. Keep this tab open to retain them.	El almacenamiento del navegador no está disponible; los pinceles solo duran esta sesión. Mantenga esta pestaña abierta para conservarlos.
-	Saving brush presets… Keep this tab open until saving finishes.	Guardando ajustes preestablecidos de pincel… Mantenga esta pestaña abierta hasta que termine.
+	Keep this tab open to retain your brushes.	Mantén esta pestaña abierta para conservar tus pinceles.
+	Browser storage is unavailable; brushes are session-only. Keep this tab open to retain them.	El almacenamiento del navegador no está disponible; los pinceles solo duran esta sesión. Mantén esta pestaña abierta para conservarlos.
+	Saving brush presets… Keep this tab open until saving finishes.	Guardando ajustes preestablecidos de pincel… Mantén esta pestaña abierta hasta que termine.
 	Reflect	Reflejar
 	Glow	Resplandor
 	Negation	Negación
@@ -2631,13 +2631,13 @@ fontWeight	Italic	Cursiva
 	Remove pair	Quitar par
 	Dash offset	Desplazamiento de guiones
 	Open paths use centered strokes	Los trazados abiertos usan trazos centrados
-	Use finite lengths and a positive pattern total	Use longitudes finitas y un total de patrón positivo
-	No subject found — try Object Selection or the Lasso	No se encontró ningún sujeto — pruebe Selección de objetos o el Lazo
+	Use finite lengths and a positive pattern total	Usa longitudes finitas y un total de patrón positivo
+	No subject found — try Object Selection or the Lasso	No se encontró ningún sujeto — prueba Selección de objetos o el Lazo
 	Quick Selection found nothing there	Selección rápida no encontró nada ahí
-	Object Selection found nothing there — try a tighter rectangle	Selección de objetos no encontró nada ahí — pruebe un rectángulo más ajustado
-	No subject found — try a rectangle around the object	No se encontró ningún sujeto — pruebe un rectángulo alrededor del objeto
-	Click the first point or press {key} to close · {del} removes a point · Esc cancels	Haga clic en el primer punto o pulse {key} para cerrar · {del} elimina un punto · Esc cancela
-	Click, then move along an edge · click to fasten a point · {alt}-click for a straight segment · double-click to close	Haga clic y siga un borde · haga clic para fijar un punto · {alt}-clic para un segmento recto · doble clic para cerrar
+	Object Selection found nothing there — try a tighter rectangle	Selección de objetos no encontró nada ahí — prueba un rectángulo más ajustado
+	No subject found — try a rectangle around the object	No se encontró ningún sujeto — prueba un rectángulo alrededor del objeto
+	Click the first point or press {key} to close · {del} removes a point · Esc cancels	Haz clic en el primer punto o pulsa {key} para cerrar · {del} elimina un punto · Esc cancela
+	Click, then move along an edge · click to fasten a point · {alt}-click for a straight segment · double-click to close	Haz clic y sigue un borde · haz clic para fijar un punto · {alt}-clic para un segmento recto · doble clic para cerrar
 	Follows only edges this close to the pointer ([ and ] change it)	Solo sigue bordes así de cerca del puntero ([ y ] lo cambian)
 	Higher values follow only edges that contrast sharply with their surroundings	Los valores altos solo siguen bordes con mucho contraste con su entorno
 	How often fastening points are placed by themselves	Con qué frecuencia se colocan puntos de fijación automáticamente
@@ -2691,7 +2691,7 @@ cameraData	Lens	Objetivo
 	Include in playback	Incluir en la reproducción
 	Perspective Crop Tool	Herramienta Recortar con perspectiva
 	Show Grid	Mostrar cuadrícula
-	Drag a box or click four corners · drag the corners onto the edges of a skewed shape · {commit} commits · Esc cancels	Arrastre un cuadro o haga clic en cuatro esquinas · arrastre las esquinas a los bordes de una forma inclinada · {commit} confirma · Esc cancela
+	Drag a box or click four corners · drag the corners onto the edges of a skewed shape · {commit} commits · Esc cancels	Arrastra un cuadro o haz clic en cuatro esquinas · arrastra las esquinas a los bordes de una forma inclinada · {commit} confirma · Esc cancela
 	Artboard Tool	Herramienta Lienzo
 	Make Portrait	Hacer vertical
 	Make Landscape	Hacer horizontal
@@ -2703,9 +2703,9 @@ cameraData	Lens	Objetivo
 	Click: smooth point · Double-click: corner · Drag a point: move · Click first point: close · {key} finish	Clic: punto suave · Doble clic: esquina · Arrastrar un punto: mover · Clic en el primer punto: cerrar · {key}: terminar
 	New Crop Preset…	Nuevo ajuste preestablecido de recorte…
 	Delete Crop Preset…	Eliminar ajuste preestablecido de recorte…
-	Select the crop presets to delete:	Seleccione los ajustes preestablecidos de recorte que desea eliminar:
-	Select the crop presets to delete	Seleccione los ajustes preestablecidos de recorte que desea eliminar
-	Enter a name for the crop preset	Introduzca un nombre para el ajuste preestablecido de recorte
+	Select the crop presets to delete:	Selecciona los ajustes preestablecidos de recorte que quieres eliminar:
+	Select the crop presets to delete	Selecciona los ajustes preestablecidos de recorte que quieres eliminar
+	Enter a name for the crop preset	Introduce un nombre para el ajuste preestablecido de recorte
 	There is no crop size or ratio to save	No hay ningún tamaño ni proporción de recorte que guardar
 	Scale:	Escala:
 	Snap to Origin	Ajustar a origen
@@ -2728,14 +2728,14 @@ cameraData	Lens	Objetivo
 	Draw to modify the curve	Dibujar para modificar la curva
 curves	Smooth	Suavizar
 	Smooth the curve values	Suavizar los valores de la curva
-	Drag to draw the curve · {key}-click draws a straight line	Arrastre para dibujar la curva · {key}-clic traza una línea recta
+	Drag to draw the curve · {key}-click draws a straight line	Arrastra para dibujar la curva · {key}-clic traza una línea recta
 	Edit Plane	Editar plano
 	Create Plane	Crear plano
 	Grid Size:	Tamaño de rejilla:
-	Vanishing Point: click four corners to create a plane	Punto de fuga: haga clic en cuatro esquinas para crear un plano
+	Vanishing Point: click four corners to create a plane	Punto de fuga: haz clic en cuatro esquinas para crear un plano
 	Vanishing Point is not active	Punto de fuga no está activo
 	Apply Vanishing Point ({key})	Aplicar punto de fuga ({key})
-	Fix the red plane first: its corners must form a convex quad	Corrija primero el plano rojo: sus esquinas deben formar un cuadrilátero convexo
+	Fix the red plane first: its corners must form a convex quad	Corrige primero el plano rojo: sus esquinas deben formar un cuadrilátero convexo
 # Select and Mask view modes (#1754)
 	Onion Skin	Papel cebolla
 	Marching Ants	Hormigas en marcha
@@ -2749,7 +2749,7 @@ curves	Smooth	Suavizar
 	Refine Edge Brush (R)	Pincel para perfeccionar bordes (R)
 	Expand Detection Area	Ampliar área de detección
 	Restore Original Edge	Restaurar borde original
-	Paint over hair or fur on the image; Alt paints the other mode	Pinte sobre el pelo o el pelaje de la imagen; Alt pinta en el otro modo
+	Paint over hair or fur on the image; Alt paints the other mode	Pinta sobre el pelo o el pelaje de la imagen; Alt pinta en el otro modo
 	Clear Brush Strokes	Borrar trazos de pincel
 	Show rulers	Mostrar reglas
 	Presentation	Presentación
@@ -2768,7 +2768,7 @@ curves	Smooth	Suavizar
 	Fill with {mode}-neutral color (50% gray)	Rellenar con el color neutro de {mode} (gris al 50%)
 	(No neutral color exists for {mode} mode.)	(No existe un color neutro para el modo {mode}.)
 	Apply mask to layer before removing?	¿Aplicar la máscara a la capa antes de eliminarla?
-	The layer or its mask changed. Drag the mask onto the Trash again.	La capa o su máscara ha cambiado. Arrastre de nuevo la máscara a la papelera.
+	The layer or its mask changed. Drag the mask onto the Trash again.	La capa o su máscara ha cambiado. Arrastra de nuevo la máscara a la papelera.
 	Delete the vector mask?	¿Eliminar la máscara vectorial?
 # Counted status messages and labels (#3454; adapted from PR #3821)
 @plural	Exported {n} swatch to {file}|Exported {n} swatches to {file}	Se exportó {n} muestra a {file}|Se exportaron {n} muestras a {file}
@@ -2777,7 +2777,7 @@ curves	Smooth	Suavizar
 @plural	Played {n} step|Played {n} steps	Se reprodujo {n} paso|Se reprodujeron {n} pasos
 @plural	Updated {n} linked smart object changed on disk|Updated {n} linked smart objects changed on disk	Se actualizó {n} objeto inteligente enlazado modificado en el disco|Se actualizaron {n} objetos inteligentes enlazados modificados en el disco
 @plural	Saved for Web: {n} file|Saved for Web: {n} files	Guardado para Web: {n} archivo|Guardado para Web: {n} archivos
-@plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	Se eliminó {n} capa registrada por esta composición. Actualice la composición o borre la advertencia.|Se eliminaron {n} capas registradas por esta composición. Actualice la composición o borre la advertencia.
+@plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	Se eliminó {n} capa registrada por esta composición. Actualiza la composición o borra la advertencia.|Se eliminaron {n} capas registradas por esta composición. Actualiza la composición o borra la advertencia.
 @plural	{n} plane|{n} planes	{n} plano|{n} planos
 @plural	{n} preset|{n} presets	{n} ajuste preestablecido|{n} ajustes preestablecidos
 @plural	{n} sample point removed|{n} sample points removed	Se quitó {n} punto de muestreo|Se quitaron {n} puntos de muestreo
@@ -2806,7 +2806,7 @@ curves	Smooth	Suavizar
 	{name} (Photoshop)	{name} (Photoshop)
 	{message} ({note})	{message} ({note})
 @plural	Loaded {n} action from {file}|Loaded {n} actions from {file}	Se cargó {n} acción de {file}|Se cargaron {n} acciones de {file}
-@plural	{n} step has no PhotoCraft equivalent yet|{n} steps have no PhotoCraft equivalent yet	{n} paso aún no tiene equivalente en PhotoCraft|{n} pasos aún no tienen equivalente en PhotoCraft
+@plural	{n} step has no PhotoCraft equivalent yet|{n} steps have no PhotoCraft equivalent yet	{n} paso aún no tiene equivalente en WordNext Photo|{n} pasos aún no tienen equivalente en WordNext Photo
 @plural	Saved {n} action to {file}|Saved {n} actions to {file}	Se guardó {n} acción en {file}|Se guardaron {n} acciones en {file}
 @plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	{n} paso sin equivalente en Photoshop omitido|{n} pasos sin equivalente en Photoshop omitidos
 
@@ -2818,7 +2818,7 @@ curves	Smooth	Suavizar
 	Message:	Mensaje:
 	Allow Continue	Permitir continuar
 	Show dialog during playback	Mostrar el cuadro de diálogo durante la reproducción
-	Select an action first	Seleccione primero una acción
+	Select an action first	Selecciona primero una acción
 	Action playback stopped	Reproducción de la acción detenida
 	Step {step} is waiting for its dialog	El paso {step} está esperando su cuadro de diálogo
 @plural	{n} action|{n} actions	{n} acción|{n} acciones

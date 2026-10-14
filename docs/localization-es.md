@@ -10,8 +10,12 @@ English label.
 
 ## Register and style
 
-- **Formal "usted"**, as in Photoshop's Spanish UI: «Haga clic», «Seleccione», «¿Desea guardar…?».
-  The catalog mixed «usted» and «tú»; every user-facing instruction now uses «usted».
+- **Informal "tú"** (WordNext fork): «Haz clic», «Selecciona», «¿Quieres guardar…?», «tu trabajo».
+  Upstream used the formal «usted» (as Photoshop's Spanish UI does); the WordNext fork speaks to
+  the user as WordNext does everywhere else. Possessives that refer to an object, not to the
+  user, stay «su/sus» («sus ajustes de carácter» of a layer).
+- **Spanish of Spain** (WordNext fork): «ratón», «ordenador/equipo», «Intro», no Latin-American
+  forms such as «presione» or «ingrese». The product is called «WordNext Photo» in translations.
 - **Sentence case** after the first word, except panel and tool names, which keep their capital
   as in Photoshop: «Panel Carácter», «Herramienta Pluma».
 - Quotation marks are «angulares»: «{name}».

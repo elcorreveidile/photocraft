@@ -684,6 +684,15 @@ pub fn title_bar(app: &mut PhotocraftApp, ui: &mut egui::Ui) {
                         }
                         button.context_menu(|ui| crate::prefs_ui::appearance_context_menu(app, ui));
                     }
+                    // WordNext fork: the language selector sits in the bar, not only in Preferences.
+                    // Like the other controls, it is dropped when the bar is too narrow.
+                    if icons_shown >= 2 && ui.available_width() >= LANGUAGE_MIN + TITLE_GAP {
+                        let mut code = crate::i18n::current().code().to_string();
+                        let langs: Vec<(String, &str)> = crate::i18n::Lang::all().map(|l| (l.code().to_string(), l.name())).collect();
+                        if widgets::dropdown(ui, "ui-language", &mut code, &langs, LANGUAGE_WIDTH) {
+                            let _ = app.run("prefs.set", json!({"values": {"interface.language": code}}));
+                        }
+                    }
                     if rtl { ui.min_rect().right() } else { ui.min_rect().left() }
                 };
                 free = if rtl { (controls_end, menus_end) } else { (menus_end, controls_end) };
@@ -746,6 +755,9 @@ const TITLE_GAP: f32 = 16.0;
 /// The workspace switcher's narrowest width, and one 28 pt title-bar icon with its spacing.
 const WORKSPACE_MIN: f32 = 90.0;
 const ICON_SLOT: f32 = 34.0;
+/// The title bar's language selector: its width, and the room it needs to be shown at all.
+const LANGUAGE_WIDTH: f32 = 112.0;
+const LANGUAGE_MIN: f32 = 150.0;
 
 /// Left edge for a title `width` wide: centred on `center` when it fits in the free gap from
 /// `left` to `right` (the menus' and the controls' facing edges, whichever side each is on),
