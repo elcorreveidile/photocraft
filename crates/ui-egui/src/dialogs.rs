@@ -542,7 +542,7 @@ pub fn title(d: &Dialog) -> String {
     match d.kind {
         DialogKind::NewDocument => "New Document".into(),
         DialogKind::About if d.fields.get("systemInfo").and_then(Value::as_bool) == Some(true) => "System Info".into(),
-        DialogKind::About => "About PhotoCraft".into(),
+        DialogKind::About => "About WordNext Photo".into(),
         DialogKind::LayerStyle => "Layer Style".into(),
         DialogKind::Command => d.fields.get("__label").and_then(Value::as_str).unwrap_or("Command").trim_end_matches('…').to_string(),
         DialogKind::Error => "Error".into(),

@@ -1859,7 +1859,7 @@ mod tests {
                 }
                 h.run_steps(3);
             };
-            let open = |h: &Harness<'_, PhotocraftApp>| h.query_by_label_contains("About PhotoCraft").is_some();
+            let open = |h: &Harness<'_, PhotocraftApp>| h.query_by_label_contains("About WordNext Photo").is_some();
             let field_id = egui::Id::new("help-menu-search").with("field");
             let help = h.get_by_label("Help").rect().center();
             click(&mut h, help);
