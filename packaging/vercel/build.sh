@@ -5,16 +5,20 @@ set -euo pipefail
 
 TRUNK_VERSION="${TRUNK_VERSION:-0.21.14}"
 
-if ! command -v cargo >/dev/null 2>&1; then
-  curl -fsSL https://sh.rustup.rs | sh -s -- -y --profile minimal --default-toolchain stable
+# The image may ship a bare `cargo` without rustup (no wasm target), so always use our own rustup.
+export CARGO_HOME="${CARGO_HOME:-$HOME/.cargo}"
+export RUSTUP_HOME="${RUSTUP_HOME:-$HOME/.rustup}"
+export PATH="$CARGO_HOME/bin:$PATH"
+if ! command -v rustup >/dev/null 2>&1; then
+  curl -fsSL https://sh.rustup.rs | sh -s -- -y --no-modify-path --profile minimal --default-toolchain stable
 fi
-# shellcheck disable=SC1091
-. "$HOME/.cargo/env"
+rustup default stable
 rustup target add wasm32-unknown-unknown
+cargo --version
 
-mkdir -p "$HOME/.cargo/bin"
+mkdir -p "$CARGO_HOME/bin"
 curl -fsSL "https://github.com/trunk-rs/trunk/releases/download/v${TRUNK_VERSION}/trunk-x86_64-unknown-linux-gnu.tar.gz" \
-  | tar -xz -C "$HOME/.cargo/bin" trunk
+  | tar -xz -C "$CARGO_HOME/bin" trunk
 trunk --version
 
 cd apps/photocraft-web
