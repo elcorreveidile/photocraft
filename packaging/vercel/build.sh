@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # WordNext fork: build the browser version on Vercel (static output in dist/web).
-# Vercel's build image has no Rust, so install the toolchain, the wasm target and Trunk first.
+# Vercel's image has an old glibc, so use the static (musl) Trunk build; install Rust and the wasm target ourselves.
 set -euo pipefail
 
 TRUNK_VERSION="${TRUNK_VERSION:-0.21.14}"
@@ -17,7 +17,7 @@ rustup target add wasm32-unknown-unknown
 cargo --version
 
 mkdir -p "$CARGO_HOME/bin"
-curl -fsSL "https://github.com/trunk-rs/trunk/releases/download/v${TRUNK_VERSION}/trunk-x86_64-unknown-linux-gnu.tar.gz" \
+curl -fsSL "https://github.com/trunk-rs/trunk/releases/download/v${TRUNK_VERSION}/trunk-x86_64-unknown-linux-musl.tar.gz" \
   | tar -xz -C "$CARGO_HOME/bin" trunk
 trunk --version
 
