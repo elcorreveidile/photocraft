@@ -31,3 +31,7 @@ PhotoCraft's English labels; no proprietary translation resources were used.
 
 Serbian translations: PhotoCraft contributors, original translations of
 PhotoCraft's English labels; no proprietary translation resources were used.
+
+Catalan translations: WordNext Photo contributors, original translations of the English labels
+(a draft pending review by native speakers); no proprietary translation resources were used.
+Licensed under MIT OR Apache-2.0, at your option.
