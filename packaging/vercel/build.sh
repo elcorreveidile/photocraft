@@ -31,4 +31,10 @@ rm -rf dist/vercel
 mkdir -p dist/vercel
 mv dist/web dist/vercel/editor
 cp -r packaging/vercel/landing/. dist/vercel/
+
+# WordNext bridge (edit a picture from the WordNext media library): inline script in the editor page.
+awk 'FNR==NR { js = js $0 "\n"; next } /<\/head>/ && !done { printf "<script>\n%s</script>\n", js; done = 1 } { print }' \
+  packaging/vercel/bridge.js dist/vercel/editor/index.html > dist/vercel/editor/index.html.new
+mv dist/vercel/editor/index.html.new dist/vercel/editor/index.html
+grep -q 'wordnext-photo:ready' dist/vercel/editor/index.html
 ls dist/vercel dist/vercel/editor
