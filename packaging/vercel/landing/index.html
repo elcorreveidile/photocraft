@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordNext Photo — Editor de imágenes en tu navegador</title>
+  <meta name="description" content="WordNext Photo es un editor de imágenes de código abierto con capas, máscaras, ajustes y filtros. Funciona en el navegador, sin cuenta y sin subir tus archivos.">
+  <meta name="theme-color" content="#262626">
+  <meta property="og:title" content="WordNext Photo">
+  <meta property="og:description" content="Editor de imágenes de código abierto que funciona en tu navegador.">
+  <meta property="og:image" content="https://photo.wordnext.tech/icon-512.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" href="/icon-192.png">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <style>
+    :root { --bg: #1e1e1e; --panel: #2a2a2a; --line: #3a3a3a; --text: #ececec; --dim: #a9a9a9; --accent: #008a4b; --accent-hi: #00a85a; }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); }
+    body { margin: 0; color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    a { color: #9ad9b5; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; font-size: 17px; }
+    .brand img { width: 32px; height: 32px; border-radius: 7px; }
+    .brand .by { font-weight: 400; font-size: 13px; color: var(--dim); text-decoration: none; margin-left: 2px; }
+    .brand .by:hover { color: var(--text); text-decoration: underline; }
+    .lang a { color: var(--dim); text-decoration: none; padding: 4px 8px; border-radius: 6px; font-size: 14px; }
+    .lang a[aria-current="true"] { color: var(--text); background: var(--panel); }
+    .hero { padding: 56px 0 40px; text-align: center; }
+    h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.02em; }
+    .lead { max-width: 640px; margin: 0 auto 28px; color: var(--dim); font-size: 18px; }
+    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; border: 1px solid var(--line); background: var(--panel); color: var(--text); text-decoration: none;
+      font: inherit; font-weight: 600; padding: 12px 22px; border-radius: 10px; cursor: pointer; }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn.primary:hover { background: var(--accent-hi); }
+    .btn[hidden] { display: none; }
+    .hint { margin: 14px auto 0; max-width: 560px; color: var(--dim); font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin: 28px 0 8px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .card p { margin: 0; color: var(--dim); font-size: 15px; }
+    h2 { font-size: 22px; margin: 44px 0 4px; }
+    .note { background: var(--panel); border-left: 3px solid #d69e2e; padding: 14px 18px; border-radius: 6px; color: var(--dim); font-size: 15px; margin-top: 28px; }
+    .wn .wn-links { display: block; margin-top: 6px; }
+    .wn { margin-top: 36px; padding: 20px; border: 1px dashed var(--line); border-radius: 12px; color: var(--dim); font-size: 15px; }
+    footer { margin: 48px 0 32px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--dim); font-size: 13px; }
+    footer p { margin: 0 0 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><img src="/icon-192.png" alt="" width="32" height="32"> WordNext Photo
+        <a class="by" href="https://www.wordnext.tech" data-i18n="by">por WordNext</a></div>
+      <nav class="lang" aria-label="Idioma / Language">
+        <a href="?lang=es" data-lang="es">ES</a><a href="?lang=en" data-lang="en">EN</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 data-i18n="h1">Edita tus imágenes en el navegador, sin instalar nada</h1>
+        <p class="lead" data-i18n="lead">WordNext Photo es un editor de imágenes de código abierto con capas, máscaras, ajustes y filtros. No necesita cuenta y no sube tus archivos a ningún servidor: todo se ejecuta en tu equipo.</p>
+        <div class="actions">
+          <a class="btn primary" href="/editor/" data-i18n="open">Abrir el editor</a>
+          <button class="btn" id="install" type="button" hidden data-i18n="install">Instalar como aplicación</button>
+        </div>
+        <p class="hint" id="install-hint" hidden></p>
+        <p class="hint" data-i18n="size">La primera vez se descargan unos 11 MB; después queda guardado en tu navegador y abre más rápido.</p>
+      </section>
+
+      <section aria-labelledby="what">
+        <h2 id="what" data-i18n="whatTitle">Qué puedes hacer</h2>
+        <div class="grid">
+          <div class="card"><h3 data-i18n="f1t">Capas y máscaras</h3><p data-i18n="f1d">Trabaja por capas, con máscaras y modos de fusión, y deshaz lo que haga falta.</p></div>
+          <div class="card"><h3 data-i18n="f2t">Ajustes y filtros</h3><p data-i18n="f2d">Curvas, vibrance y otros ajustes y filtros, como capas de ajuste que puedes cambiar después.</p></div>
+          <div class="card"><h3 data-i18n="f3t">Texto, vectores y pinceles</h3><p data-i18n="f3d">Añade texto, formas y pinta con pinceles para retocar o componer.</p></div>
+          <div class="card"><h3 data-i18n="f4t">Archivos PSD</h3><p data-i18n="f4d">Abre y guarda archivos PSD, además de los formatos de imagen habituales.</p></div>
+          <div class="card"><h3 data-i18n="f5t">Privado</h3><p data-i18n="f5d">Tus imágenes se procesan en tu navegador. No hay cuenta ni subida de archivos.</p></div>
+          <div class="card"><h3 data-i18n="f6t">En tu idioma</h3><p data-i18n="f6d">Español de España por defecto, con selector para cambiar de idioma.</p></div>
+        </div>
+        <div class="note" data-i18n="alpha"><strong>Versión temprana.</strong> El programa en el que se basa está en alfa: guarda tu trabajo con frecuencia. Está pensado para usarse con ratón y teclado.</div>
+      </section>
+
+      <section class="wn">
+        <span data-i18n="wn">¿Tienes una web hecha con WordNext? Puedes mostrar el editor dentro de una página con el bloque «App de WordNext».</span>
+        <span class="wn-links">
+          <a href="https://www.wordnext.tech" data-i18n="wnLink">Conoce WordNext</a> ·
+          <a href="https://app.wordnext.tech/crear" id="wn-create" data-i18n="wnCreate">Crea tu web gratis</a>
+        </span>
+      </section>
+    </main>
+
+    <footer>
+      <p><span data-i18n="madeBy">Un producto de</span> <a href="https://www.wordnext.tech">WordNext</a>.</p>
+      <p data-i18n="credit">WordNext Photo se basa en PhotoCraft, software libre bajo licencia MIT o Apache-2.0, con copyright de sus autores originales.</p>
+      <p>
+        <a href="https://github.com/elcorreveidile/photocraft" data-i18n="src">Código fuente</a> ·
+        <a href="https://github.com/elcorreveidile/photocraft/blob/main/LICENSE-MIT">MIT</a> ·
+        <a href="https://github.com/elcorreveidile/photocraft/blob/main/LICENSE-APACHE">Apache-2.0</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // Spanish is the default; ?lang=en (or an English browser) switches the page.
+    var T = {
+      es: null,
+      en: {
+        h1: "Edit your images in the browser, nothing to install",
+        lead: "WordNext Photo is an open-source image editor with layers, masks, adjustments and filters. It needs no account and uploads your files nowhere: everything runs on your computer.",
+        open: "Open the editor",
+        install: "Install as an app",
+        size: "The first time it downloads about 11 MB; after that it is kept in your browser and opens faster.",
+        whatTitle: "What you can do",
+        f1t: "Layers and masks", f1d: "Work in layers, with masks and blend modes, and undo whatever you need.",
+        f2t: "Adjustments and filters", f2d: "Curves, vibrance and other adjustments and filters, as adjustment layers you can change later.",
+        f3t: "Text, vectors and brushes", f3d: "Add text and shapes, and paint with brushes to retouch or compose.",
+        f4t: "PSD files", f4d: "Open and save PSD files, as well as the usual image formats.",
+        f5t: "Private", f5d: "Your images are processed in your browser. No account, no file uploads.",
+        f6t: "In your language", f6d: "Spanish (Spain) by default, with a selector to change language.",
+        alpha: "<strong>Early version.</strong> The program it is based on is in alpha: save your work often. It is designed for use with a mouse and keyboard.",
+        wn: "Have a website built with WordNext? You can show the editor inside a page with the “WordNext app” block.",
+        wnLink: "About WordNext",
+        wnCreate: "Build your free website",
+        by: "by WordNext",
+        madeBy: "A product by",
+        credit: "WordNext Photo is based on PhotoCraft, free software under the MIT or Apache-2.0 licence, copyright its original authors.",
+        src: "Source code",
+        iosHint: "On iPhone or iPad: tap Share, then “Add to Home Screen”.",
+        noInstallHint: "Your browser doesn't offer installing from this page. You can use the editor in a tab, or try Chrome, Edge or Safari.",
+        installedHint: "WordNext Photo is already installed on this device."
+      }
+    };
+    var ES_HINTS = {
+      iosHint: "En iPhone o iPad: pulsa Compartir y después «Añadir a pantalla de inicio».",
+      noInstallHint: "Tu navegador no ofrece instalar desde esta página. Puedes usar el editor en una pestaña, o probar con Chrome, Edge o Safari.",
+      installedHint: "WordNext Photo ya está instalado en este dispositivo."
+    };
+
+    var params = new URLSearchParams(location.search);
+    var lang = params.get("lang");
+    if (lang !== "es" && lang !== "en") lang = /^en\b/i.test(navigator.language || "") ? "en" : "es";
+    document.documentElement.lang = lang;
+
+    var nodes = document.querySelectorAll("[data-i18n]");
+    if (lang === "en") {
+      document.title = "WordNext Photo — Image editor in your browser";
+      nodes.forEach(function (el) {
+        var v = T.en[el.getAttribute("data-i18n")];
+        if (v !== undefined) { if (/<\w/.test(v)) el.innerHTML = v; else el.textContent = v; }
+      });
+    }
+    document.querySelectorAll("[data-lang]").forEach(function (a) {
+      a.setAttribute("aria-current", String(a.getAttribute("data-lang") === lang));
+    });
+    var create = document.getElementById("wn-create");
+    if (create && lang === "en") create.setAttribute("href", "https://app.wordnext.tech/crear?lang=en");
+    function hint(key) { return lang === "en" ? T.en[key] : ES_HINTS[key]; }
+
+    // Installing: Chrome/Edge/Android give us an event; iOS Safari has a manual flow; the rest can't.
+    var btn = document.getElementById("install");
+    var hintEl = document.getElementById("install-hint");
+    var deferred = null;
+    var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+    function showHint(key) { hintEl.textContent = hint(key); hintEl.hidden = false; }
+
+    window.addEventListener("beforeinstallprompt", function (e) {
+      e.preventDefault();
+      deferred = e;
+      hintEl.hidden = true;
+      btn.hidden = false;
+    });
+    btn.addEventListener("click", function () {
+      if (!deferred) return;
+      deferred.prompt();
+      deferred.userChoice.finally(function () { deferred = null; btn.hidden = true; });
+    });
+    window.addEventListener("appinstalled", function () { btn.hidden = true; showHint("installedHint"); });
+
+    if (standalone) {
+      showHint("installedHint");
+    } else if (/iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) {
+      showHint("iosHint");
+    } else {
+      // If no install event arrives shortly, say so instead of leaving the user wondering.
+      setTimeout(function () { if (!deferred && btn.hidden && hintEl.hidden) showHint("noInstallHint"); }, 2500);
+    }
+
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(function () {});
+  </script>
+</body>
+</html>

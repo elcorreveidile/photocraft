@@ -8,7 +8,8 @@ use crate::PhotocraftApp;
 
 /// The product name shown in the UI.
 pub const PRODUCT_NAME: &str = "WordNext Photo";
-pub const APP_PAGE: &str = "https://www.wordnext.tech";
+/// The app's own landing page (photo.wordnext.tech), not the general WordNext site.
+pub const APP_PAGE: &str = "https://photo.wordnext.tech";
 pub const GITHUB: &str = "https://github.com/elcorreveidile/photocraft";
 pub const ISSUES: &str = "https://github.com/elcorreveidile/photocraft/issues";
 
@@ -132,7 +133,7 @@ mod tests {
     fn link_commands_open_their_urls() {
         let mut app = PhotocraftApp::new(photocraft_engine::Session::new(), Default::default());
         let ctx = egui::Context::default();
-        for (id, url) in [("help.website", "https://www.wordnext.tech"), ("help.github", "https://github.com/elcorreveidile/photocraft")] {
+        for (id, url) in [("help.website", "https://photo.wordnext.tech"), ("help.github", "https://github.com/elcorreveidile/photocraft")] {
             let r = crate::menus::invoke(&mut app, &ctx, id, serde_json::json!({})).unwrap();
             assert_eq!(r["url"], url);
             assert_eq!(app.ui.status, format!("Opened {url}"));
