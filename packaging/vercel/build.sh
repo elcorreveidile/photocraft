@@ -23,3 +23,12 @@ trunk --version
 
 cd apps/photocraft-web
 trunk build --release
+
+# Lay out the site: a landing page at "/" (with the install manifest and service worker) and the
+# editor, exactly as Trunk built it, under "/editor/". The app uses relative URLs, so it works there.
+cd ../..
+rm -rf dist/vercel
+mkdir -p dist/vercel
+mv dist/web dist/vercel/editor
+cp -r packaging/vercel/landing/. dist/vercel/
+ls dist/vercel dist/vercel/editor

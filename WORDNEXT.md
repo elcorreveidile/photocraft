@@ -30,3 +30,11 @@ cd apps/photocraft-web && trunk build --release   # output: dist/web
 - [ ] In-app strings ("PhotoCraft", Help menu, About dialog, Discord/ArtCraft links)
 - [ ] Icon: replace the upstream app icon with a WordNext one
 - [ ] Hosting: static deploy, headers, embed block in the WordNext editor
+
+## Site layout on Vercel (photo.wordnext.tech)
+
+`packaging/vercel/build.sh` builds the editor with Trunk (unchanged, `dist/web`) and then lays out
+`dist/vercel`: a landing page at `/` (`packaging/vercel/landing/`: Spanish by default, `?lang=en`,
+install button, web manifest, service worker) and the editor under `/editor/`. The CI web job and
+`packaging/web/package.sh` still see the plain `dist/web`, so they are not affected. The service
+worker only caches the editor's hashed files and the editor page; everything else goes to the network.
